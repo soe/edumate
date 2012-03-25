@@ -10,7 +10,7 @@ class All(AbstractHandler):
     def get(self):
 
         template_vars = {
-
+            h2: 'Challenge - Judging scorecard',
         }
         self._output_template('challenge_all.html', **template_vars)
         
