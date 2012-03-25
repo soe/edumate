@@ -2,64 +2,62 @@
 
 {% block content %}
 <div class="row">
-	<div class="span2" style="padding:10px;">
-		<img src="http://freehtc.com/wp-content/uploads/2011/trollface-hd-i12.gif">
+	<div class="span4" style="padding:10px;">
+		<img src="/static/img/trollface.jpg" width="100" align="left" />
+		
+		<div style="margin-left: 108px;">
+  		<h2>Trollface</h2>
+  		<h3>Physics Student</h3>
+  		<p>Department of Photonics Engineering</p>
+  		<p>Denmark Technical University</p>
+  	</div>
 	</div>
 	
-	<div class="span3" style="border-radius: 5px;background-color: #eee; line-height:100%;padding:10px;">
-	<br/>
-		<h2> Trollface</h2>
-		<p><h3> Physics Student</h3></p>
-		<p> Department of Photonics Engineering</p>
-	</div>
-	<div class="span6">
-	<form class="well">
-	<h3>Your description</h3>
-	<input type="text" class="span5" placeholder="Type something"><br/>
-	<button type="submit" class="btn">Submit</button>
-	</form>
+	<div class="span7" style="border-radius: 5px;background-color: #f8f8f8;padding:10px;">
+    	<h4>Description</h4><br />
+    	<textarea class="input-xlarge span6" id="textarea" rows="5">Blah blah blah....</textarea><br />
+    	<button type="submit" class="btn">Submit</button>
 	</div>
 </div>
-
+<br />
 <div class="row">
-	<div class="span4" style="border-radius: 5px;top:270px; background-color: #eee;padding:10px;">
-		<b>REPUTATION METER</b><div style="font-size:600%;top:70px;position:relative;"> 80% </div>
-			<div style="width:100%">
-				<div class="progress progress-striped
-						active">
-				<div class="bar"
-			   style="width: 80%;"></div>
-				</div>
-				</div>
-				<br/>
-				<br/>
-				<br/>
+	<div class="span4" style="border-radius: 3px;top:270px; background-color: #eee;padding:10px;">
+		<b>Reputation Meter</b>
+		
+	  <div style="font-size:600%;top:70px;position:relative;">80%</div>
+		<div style="width:100%">
+  		<div class="progress progress-striped">
+  		<div class="bar" style="width: 80%;"></div>
+  		</div>
+		</div>
+		<br/>
+		<br/>
+		<br/>
 	</div>
-	<div class="span2" style="border-radius: 5px;top:270px; background-color: #eee;padding:10px;">
-		<div align="right">
-		<h3>Current</h3>
+	<div class="span2" style="border-radius: 3px;top:270px; background-color: #eee;padding:10px;">
+		<b>Current</b>
+		<br /><br />
 		<p><i class="icon-cog"></i> Challenge 1</p>
 		<p><i class="icon-cog"></i> Challenge 2</p>
 		<p><i class="icon-cog"></i> Challenge 3</p>
 		<p><i class="icon-cog"></i> Challenge 4</p>
-		</div>
 	</div>
 	
-	<div class="span2" style="border-radius: 5px;top:270px; background-color: #eee;padding:10px;">
-		<div align="right"><h3>Past</h3>
+	<div class="span2" style="border-radius: 3px;top:270px; background-color: #eee;padding:10px;">
+		<b>Past</b>
+		<br /><br />
 		<p><i class="icon-cog"></i>Past Challenge 1</p>
 		<p><i class="icon-cog"></i>Past Challenge 2</p>
 		<p><i class="icon-cog"></i>Past Challenge 3</p>
 		<p><i class="icon-cog"></i>Past Challenge 4</p>
-		</div>
 	</div>
-	<div class="span3" style="border-radius: 5px;background-color: #eee;padding:10px;">
-		<div align="right"><h3>Recommended</h3>
+	<div class="span3" style="border-radius: 3px;top:270px; background-color: #eee;padding:10px;">
+		<b>Recommended</b>
+		<br /><br />
 		<p><i class="icon-cog"></i> Recommended Challenge 1</p>
 		<p><i class="icon-cog"></i> Recommended Challenge 2</p>
 		<p><i class="icon-cog"></i> Recommended Challenge 3</p>
 		<p><i class="icon-cog"></i> Recommended Challenge 4</p>
-		</div>
 	</div>
 </div>
 {% endblock %}

@@ -12,11 +12,40 @@ div.container {
   padding: 10px;
   border-radius: 5px;
   
-  margin-top: 60px;
+  margin-top: 2px;
+}
+
+div.container.top {
+  margin: 0 auto;
+  padding: 4px 0;
+  margin-top: 16px;
+  background-color: transparent;
 }
 
 hr.header_divider {
-  margin: 4px 0;
+  margin: 4px 0 8px 0;
+}
+
+.top_link {
+  padding: 6px 10px;
+  border-radius: 3px;
+  
+  margin-left: 14px;
+  
+  background-color: #fff;
+}
+
+.top_link:hover {
+  background-color: #f6f6f6;
+}
+
+.top_link.dropdown-toggle {
+  margin-top: 0px;
+}
+
+.top_link.dropdown-toggle:hover {
+  margin-top: 0px;
+  background-color: #f6f6f6;
 }
 
 /* Footer

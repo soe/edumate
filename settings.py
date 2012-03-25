@@ -5,13 +5,6 @@ import os
 # config for webapp2
 config = {}
 
-config['gdata_oauth'] = {
-  'APP_NAME': 'rolodex-soe',
-  'CONSUMER_KEY': '441537484364-mh2pmtvqs5ae4o3qlelk89idjsl904eo.apps.googleusercontent.com',
-  'CONSUMER_SECRET': 'NnxGeSwyS_R3u2mQReSeuSdr',
-  'SCOPES': ['https://www.google.com/m8/feeds']
-}
-
 config['webapp2_extras.sessions'] = {
     'secret_key': 'my-super-secret-key',
 }
