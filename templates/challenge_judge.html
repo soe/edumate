@@ -1,5 +1,321 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>BootEngine</h1>
+<style type="text/css">
+  .row.user_row {
+    margin-bottom: 8px;
+  }
+  .user_photo {
+    width: 120px; height: 120px; background-color: #eee; margin: 0 auto;
+  }
+  .user_score {
+    padding: 30px 14px;
+    font-size: 54px;
+    border-radius: 5px;
+    background: #ff9;
+  }
+  
+  .user_judge {
+    padding: 6px 14px;
+  }
+  
+</style>
+
+<div class="row user_row"> 
+  <div class="span2">
+    <div class="user_score">
+      99%
+    </div>
+    <div class="user_judge">
+      <a href="#" class="btn btn-small" data-toggle="modal" data-target="#judgesheet" href="">Judge</a>
+    </div>
+  </div>
+  
+  <div class="span2">
+    <div class="user_photo">
+      
+    </div>
+  </div>
+    
+  <div class="span4">
+    <h4>Submissions</h4><br />
+    <i class="icon-file"></i> Idea writeup.doc<br />
+    <i class="icon-picture"></i> Mockups.pdf<br />
+    <i class="icon-picture"></i> Graphs and figures.pdf<br />
+    <i class="icon-file"></i> Thesis specifications.doc
+  </div>
+</div>
+
+<div class="row user_row"> 
+  <div class="span2">
+    <div class="user_score" style="background: #9f6;">
+      98%
+    </div>
+    <div class="user_judge">
+      <a href="#" class="btn btn-small" data-toggle="modal" data-target="#judgesheet" href="">Judge</a>
+    </div>
+  </div>
+  
+  <div class="span2">
+    <div class="user_photo">
+      
+    </div>
+  </div>
+    
+  <div class="span4">
+    <h4>Submissions</h4><br />
+    <i class="icon-file"></i> Idea writeup.doc<br />
+    <i class="icon-picture"></i> Mockups.pdf<br />
+    <i class="icon-picture"></i> Graphs and figures.pdf<br />
+    <i class="icon-file"></i> Thesis specifications.doc
+  </div>
+</div>
+
+<div class="row user_row"> 
+  <div class="span2">
+    <div class="user_score" style="background: #6cc;">
+      92%
+    </div>
+    <div class="user_judge">
+      <a href="#" class="btn btn-small" data-toggle="modal" data-target="#judgesheet" href="">Judge</a>
+    </div>
+  </div>
+  
+  <div class="span2">
+    <div class="user_photo">
+      
+    </div>
+  </div>
+    
+  <div class="span4">
+    <h4>Submissions</h4><br />
+    <i class="icon-file"></i> Idea writeup.doc<br />
+    <i class="icon-picture"></i> Mockups.pdf<br />
+    <i class="icon-picture"></i> Graphs and figures.pdf<br />
+    <i class="icon-file"></i> Thesis specifications.doc
+  </div>
+</div>
+
+<div class="row user_row"> 
+  <div class="span2">
+    <div class="user_score" style="background: #f9c;">
+      86%
+    </div>
+    <div class="user_judge">
+      <a href="#" class="btn btn-small" data-toggle="modal" data-target="#judgesheet" href="">Judge</a>
+    </div>
+  </div>
+  
+  <div class="span2">
+    <div class="user_photo">
+      
+    </div>
+  </div>
+    
+  <div class="span4">
+    <h4>Submissions</h4><br />
+    <i class="icon-file"></i> Idea writeup.doc<br />
+    <i class="icon-picture"></i> Mockups.pdf<br />
+    <i class="icon-picture"></i> Graphs and figures.pdf<br />
+    <i class="icon-file"></i> Thesis specifications.doc
+  </div>
+</div>
+
+<div class="row user_row"> 
+  <div class="span2">
+    <div class="user_score" style="background: #fc6;">
+      80%
+    </div>
+    <div class="user_judge">
+      <a href="#" class="btn btn-small" data-toggle="modal" data-target="#judgesheet" href="">Judge</a>
+    </div>
+  </div>
+  
+  <div class="span2">
+    <div class="user_photo">
+      
+    </div>
+  </div>
+    
+  <div class="span4">
+    <h4>Submissions</h4><br />
+    <i class="icon-file"></i> Idea writeup.doc<br />
+    <i class="icon-picture"></i> Mockups.pdf<br />
+    <i class="icon-picture"></i> Graphs and figures.pdf<br />
+    <i class="icon-file"></i> Thesis specifications.doc
+  </div>
+</div>
+
+<!-- Judge scores -->
+<div class="modal hide fade" id="judgesheet">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Judge Scorecard</h3>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="span1">
+        <strong>20%</strong>
+      </div>
+      <div class="span2">
+        Quality
+      </div>
+      <div class="">
+        <div class="control-group">
+          <div class="controls">
+            <label class="radio inline">
+              <input type="radio"> 1
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 2
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 3
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 4
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 5
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span1">
+        <strong>20%</strong>
+      </div>
+      <div class="span2">
+        Completeness
+      </div>
+      <div class="">
+        <div class="control-group">
+          <div class="controls">
+            <label class="radio inline">
+              <input type="radio"> 1
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 2
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 3
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 4
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 5
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span1">
+        <strong>20%</strong>
+      </div>
+      <div class="span2">
+        Innovation
+      </div>
+      <div class="">
+        <div class="control-group">
+          <div class="controls">
+            <label class="radio inline">
+              <input type="radio"> 1
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 2
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 3
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 4
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 5
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span1">
+        <strong>20%</strong>
+      </div>
+      <div class="span2">
+        Quality
+      </div>
+      <div class="">
+        <div class="control-group">
+          <div class="controls">
+            <label class="radio inline">
+              <input type="radio"> 1
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 2
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 3
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 4
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 5
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span1">
+        <strong>20%</strong>
+      </div>
+      <div class="span2">
+        Quality
+      </div>
+      <div class="">
+        <div class="control-group">
+          <div class="controls">
+            <label class="radio inline">
+              <input type="radio"> 1
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 2
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 3
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 4
+            </label>
+            <label class="radio inline">
+              <input type="radio"> 5
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="control-group">
+      <label class="control-label" for="textarea">Feedback</label>
+      <div class="controls">
+        <textarea class="input-xlarge" id="textarea" rows="3">Great case study! You have done well beyond our expectation!</textarea>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label" for="textarea">Recommendation</label>
+      <div class="controls">
+        <textarea class="input-xlarge" id="textarea" rows="3">Awesome! We will hire you soon!</textarea>
+      </div>
+    </div> 
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary">Complete judging</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
 {% endblock %}

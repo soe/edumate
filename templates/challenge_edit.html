@@ -1,5 +1,98 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>BootEngine</h1>
+<style>
+  hr.divider {
+    border: 1px dashed #eee;
+  }
+  #estimate {
+    width: 160px;
+    padding: 14px;
+    background-color: #ffc;
+    border-radius: 5px;
+    font-size: 120%;
+  }
+  #estimate div {
+    font-size: 120%;
+    margin-bottom: 6px;
+  }
+</style>
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Controls Bootstrap supports</legend>
+    
+    <div class="control-group">
+      <label class="control-label" for="textarea">Problem details</label>
+      <div class="controls">
+        <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label" for="textarea">Requirements for students</label>
+      <div class="controls">
+        <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label" for="textarea">Judging criterias</label>
+      <div class="controls">
+        <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+      </div>
+    </div>
+
+    <hr class="divider" />
+    
+    <div class="control-group">
+      <label class="control-label" for="optionsCheckbox">&nbsp;</label>
+      <div class="controls">
+        <label class="checkbox">
+          <input type="checkbox" id="target_pls">
+          Want to reach maximum outreach? Try out our skill filtering system.<br />
+          <img src="/static/img/payment_logo.png" width="160" />
+        </label>
+      </div>
+    </div>
+    
+    <div id="targeted" style="display: none;">
+      <div class="row">
+        <div class="span9">
+          <div class="control-group">
+            <label class="control-label" for="optionsCheckbox">Academic performance</label>
+            <div class="controls">
+              <div class="progress progress-striped">
+                <div class="bar" style="width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="control-group">
+            <label class="control-label" for="optionsCheckbox">Personality test</label>
+            <div class="controls">
+              <div class="progress progress-striped">
+                <div class="bar" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span2">
+          <div id="estimate">
+            <div>Estimated Reach</div>
+            2,360 students
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Save changes</button>
+      <button class="btn">Cancel</button>
+    </div>
+  </fieldset>
+</form>
+
+
+
+
 {% endblock %}

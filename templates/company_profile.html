@@ -1,5 +1,54 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>BootEngine</h1>
+<style>
+  hr.divider {
+    margin: 4px 0;
+  }
+  .challenge_cat {
+    float: left;
+    margin: 0 6px 6px 0;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 3px;
+  } 
+</style>
+<div class="row">
+  <div class="span3">
+    <img src="http://placehold.it/320x180" />
+  </div>
+  
+  <div class="span9">
+    <h2>Company Name</h2>
+    <br />
+    <p>
+      Company is blah blah blah
+      <br />
+      <br />
+      <br />
+      <br />
+    <p>
+    
+    <h4>Contact Person</h4>
+    <hr class="divider" />
+    <p>
+      Name<br />
+      Phone: <br />
+      Email: <br />
+    </p>  
+    
+    <h4>Relevant categories</h4>
+    <hr class="divider" />
+    <div class="challenge_cat"><i class="icon-tag"></i> Life Science</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Market Research</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Radiology</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Data Visualization</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Mobile Development</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Green Energy</div>
+    
+  </div>
+  
+</div>
+
+
 {% endblock %}

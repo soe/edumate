@@ -1,5 +1,102 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>BootEngine</h1>
+<style>
+  hr.divider {
+    margin: 4px 0;
+  }
+  .user_photo {
+    width: 42px; height: 42px; background-color: #eee;
+  }
+  .challenge_cat {
+    float: left;
+    margin: 0 6px 6px 0;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 3px;
+  }
+</style>
+<div class="row">
+  
+  <div class="span8">
+    <div class="pull-left">
+      <div class="btn-group">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+          Filter
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <!-- dropdown menu links -->
+          <a href="#">Link A</a>
+          <a href="#">Link B</a>
+          <a href="#">Link C</a>
+        </ul>
+      </div>
+    </div>
+    <div class="pull-right">
+      <input type="text" class="input-medium search-query">
+      <button type="submit" class="btn">Search</button>
+    </div>
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+    </table>
+    
+    <div class="btn-group">
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">...</button>
+    </div>
+  </div>
+
+  <div class="span4">
+    <h3>Leaderboard</h3>
+    <table class="table">
+      <tr>
+        <td width="50"><div class="user_photo"></div></td>
+        <td>
+          <h5>Name</h5>
+          23 challenges solved
+        </td>
+      </tr>
+      <tr>
+        <td width="50"><div class="user_photo"></div></td>
+        <td>
+          <h5>Name</h5>
+          23 challenges solved
+        </td>
+      </tr>
+      <tr>
+        <td width="50"><div class="user_photo"></div></td>
+        <td>
+          <h5>Name</h5>
+          23 challenges solved
+        </td>
+      </tr>
+    </table>
+    
+    <h3>Top challenge categories</h3>
+    <hr class="divider">
+    <div class="challenge_cat"><i class="icon-tag"></i> Life Science</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Market Research</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Radiology</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Data Visualization</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Mobile Development</div>
+    <div class="challenge_cat"><i class="icon-tag"></i> Green Energy</div>    
+    
+  </div>
+</div>
 {% endblock %}
