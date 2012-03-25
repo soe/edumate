@@ -1,5 +1,111 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>BootEngine</h1>
+<style>
+.row .span5 {
+	border:1px solid #666;
+	border-radius: 10px;
+}
+
+.row .span5.abc {
+border:0px;
+}
+
+.photo {
+width: 125px; height:125px; background-color:#eee;
+margin-left:30px;
+}
+
+
+</style>
+
+<div class="row">
+	<div class="span1">
+	&nbsp;
+	</div>
+	
+	<div class="span3 try">
+	<br><br><br><br>
+	<h1 style="margin-left:10px">Name of Project</h1>
+	<br>
+	</div>
+
+	<div class="span5 abc">
+	&nbsp;
+	<div class="photo"></div>
+	
+	</div>
+</div>
+
+
+<br><br>
+
+<div class="row">
+	<div class="span1">
+	&nbsp;
+	</div>
+	
+	<div class="span3">
+		<br><br>
+		<h4>Problem Details</h4>
+	</div>
+
+	<div class="span5">
+	&nbsp;<br><br><br><br>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="span1">
+	&nbsp;
+	</div>
+	
+	<div class="span3">
+		<br><br><br>
+		<h4>Requirements for students</h4>
+	</div>
+
+	<div class="span5">
+	&nbsp;<br><br><br><br><br><br>
+	</div>
+</div>
+
+<br>
+
+<div class="row">
+	<div class="span1">
+	&nbsp;
+	</div>
+	
+	<div class="span3">
+		<br><br>
+		<h4>Judging Criteria</h4>
+	</div>
+
+	<div class="span5">
+	&nbsp;<br><br><br><br>
+	</div>
+</div>
+
+<div class="row">
+	<div class="span1">
+	&nbsp;
+	</div>
+	
+	<div class="span7">
+	
+	<br><br>
+		<b>For any queries, please contact us at email@address.com</b>
+<br><br>
+		<input class="btn btn-primary" type="submit" value="Submit">	
+	
+	</div>
+
+	<div class="span1">
+	&nbsp;
+	</div>
+</div>
+
+</div>
+		
 {% endblock %}
