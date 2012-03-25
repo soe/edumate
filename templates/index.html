@@ -1,5 +1,117 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>BootEngine</h1>
+<style>
+  hr.divider {
+    margin: 4px 0;
+  }
+  
+  .statbox {
+    background-color: #eee;
+    height: 80px;
+    width: 120px;
+    float: right;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .statbox .digit {
+    font-size: 160%;
+    color: #666;
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  .statbox .info {
+    text-align: center;
+    line-height: 108%;
+    font-size: 110%;
+    position: relative;
+    top: 18px;
+  }
+</style>
+<div class="row">
+  <div class="span6">
+    <div style="font-size: 46px; color: #333; line-height: 50px; font-weight: 440;">
+      Exclusive academic <span style="background-color: #ff9; padding: 0 6px;">crowd sourcing</span>
+    </div>
+    <br />
+    <div style="font-size: 120%; color: #555; line-height: 134%;">
+      Edumate will solve these problems and will allow students to connect and colaborate more effectively through online case study work with companies. Get started with this social innovation bandwagon.
+    </div>
+  </div>
+  <div class="span6">
+    <div class="row">
+      <div class="statbox" style="background: #6cc;">
+        <div class="digit">$150 k</div>
+        <div class="info">up for grabs</div>
+      </div>
+      
+      <div class="statbox" style="background: #fc6;">
+        <div class="digit">2,450</div>
+        <div class="info">solutions implemented</div>
+      </div>
+      
+      <div class="statbox" style="background: #9f6;">
+        <div class="digit">1,200</div>
+        <div class="info">companies participating</div>
+      </div>
+      
+    </div>
+    <br />
+    <div class="row">
+      <div class="statbox" style="background: #fc6;">
+        <div class="digit">30</div>
+        <div class="info">partner universities</div>
+      </div>
+      
+      <div class="statbox" style="background: #9f6;">
+        <div class="digit">50,000</div>
+        <div class="info">innovative students</div>
+      </div>
+      
+      <div class="statbox" style="background: #6cc;">
+        <div class="digit">$1 million +</div>
+        <div class="info">rewarded</div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+<br /><br />
+
+<div class="row">
+  <div class="span4">
+    <b>For Students</b>
+    <hr class="divider" />
+    <ul>
+      <li>Real life experience</li>
+      <li>Industrial network</li>
+    </ul>
+    <a href="#" class="btn btn-primary">Sign Up</a>
+  </div>
+  
+  <div class="span4">
+    <b>For Companies</b>
+    <hr class="divider" />
+    <ul>
+      <li>Find solutions fast</li>
+      <li>Source academic talent effectively</li>
+    </ul> 
+    <a href="#" class="btn btn-primary">Sign Up</a>   
+  </div>
+  
+  <div class="span4">
+    <b>For Universities</b>
+    <hr class="divider" />
+    <ul>
+      <li>Save time</li>
+      <li>Create career opportunities</li>
+    </ul>
+    <a href="#" class="btn btn-primary">Sign Up</a>
+  </div>
+</div>
 {% endblock %}

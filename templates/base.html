@@ -26,13 +26,29 @@
 
     <div class="container top"><div class="row">
       <div class="span6">
-        LOGO
+        {% if custom %}
+        <div class="pull-left" style="background-color: #fff; border-radius: 3px; padding: 3px 0; width: 300px;">
+          <img src="/static/img/DTU_logo.jpg" width="50" align="left" />
+          <div style="padding-top: 20px;">
+            <div style="font-size: 120%;">Technical University of Denmark</div>
+            <div style="color: #369; font-size: 106%; padding-top: 2px;">Challenge Platform</div>
+          </div>
+        </div>
+        <div class="pull-left" style="margin-left: 12px; padding-top: 30px;">
+          <div style="font-size: 92%; color: #888;">Powered by:</div>
+          <a href="/"><img src="/static/img/edumate.png" width="78" /></a>
+        </div>
+        
+        {% else %}
+        <a href="/"><img src="/static/img/edumate.png" width="150" id="logo" /></a>
+        {% endif %}
+        
       </div>
       <div class="span6">
         
-        <a href="/user/profile" class="top_link pull-right">Companies</a>
-        <a href="/challenge/all" class="top_link pull-right">Students</a>
-        <a href="/company/profile" class="top_link pull-right">Challenges</a>
+        <a href="/company/profile" class="top_link pull-right">Companies</a>
+        <a href="/user/profile" class="top_link pull-right">Students</a>
+        <a href="/challenges" class="top_link pull-right">Challenges</a>
         
         <ul class="nav nav-pills pull-right">
           <li class="dropdown" id="menu1">
@@ -41,12 +57,16 @@
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
+              <li><a href="/">Home Page</a></li>
+              <li class="divider"></li>
               <li><a href="/user/browser">Students Browser **</a></li>
               <li><a href="/user/profile">Student Profile</a></li>
               <li class="divider"></li>
-              <li><a href="/challenge/all">Challenges</a></li>
+              <li><a href="/challenges">Challenges</a></li>
+              <li><a href="/challenges/DTU">Challenges (DTU)</a></li>
               <li><a href="/challenge/sample">Challenge Sample</a></li>
               <li><a href="/challenge/edit">Challenge Edit</a></li>
+              <li><a href="/challenge/judge">Challenge Judge</a></li>
               <li class="divider"></li>
               <li><a href="/company/profile">Company Profile</a></li>
               <li><a href="/company/dashboard">Company Dashboard **</a></li>

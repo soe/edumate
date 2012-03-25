@@ -9,7 +9,7 @@ body {
 
 div.container {
   background-color: #fff;
-  padding: 10px;
+  padding: 10px 16px;
   border-radius: 5px;
   
   margin-top: 2px;
@@ -46,6 +46,11 @@ hr.header_divider {
 .top_link.dropdown-toggle:hover {
   margin-top: 0px;
   background-color: #f6f6f6;
+}
+
+#logo {
+  margin: 0;
+  margin-top: -10px;
 }
 
 /* Footer

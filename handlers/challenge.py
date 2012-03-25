@@ -14,12 +14,22 @@ class All(AbstractHandler):
         }
         self._output_template('challenge_all.html', **template_vars)
         
+class AllCustom(AbstractHandler):
+
+    def get(self):
+
+        template_vars = {
+            'custom': True,
+            'header': 'Challenges',
+        }
+        self._output_template('challenge_all.html', **template_vars)
+        
 class Sample(AbstractHandler):
 
     def get(self):
 
         template_vars = {
-            'header': 'A sample challenge',
+            'header': 'Minimizing surface damage on a chocolate product',
         }
         self._output_template('challenge_sample.html', **template_vars)
         

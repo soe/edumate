@@ -16,7 +16,8 @@ routes = [
     ('/user/profile', 'handlers.user.Profile'),
     ('/user/browser', 'handlers.user.Browser'),
     
-    ('/challenge/all', 'handlers.challenge.All'),
+    ('/challenges', 'handlers.challenge.All'),
+    ('/challenges/DTU', 'handlers.challenge.AllCustom'),
     ('/challenge/sample', 'handlers.challenge.Sample'),
     ('/challenge/edit', 'handlers.challenge.Edit'),
     ('/challenge/judge', 'handlers.challenge.Judge'),

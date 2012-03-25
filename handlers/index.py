@@ -8,6 +8,5 @@ class Index(AbstractHandler):
     def get(self):
         # welcome page
         template_vars = {
-            'header': 'Index',
         }
         self._output_template('index.html', **template_vars)
